@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 25px;
+    border-bottom: 2px solid black;
+}
+
+main {
+    display: flex;
+    height: 800px;
+    text-align: center;
+
+
+
+}
+
+article {
+    flex: 2;
+    order: 2;
+    background-color: lightblue;
+    padding: 25px;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+nav {
+    flex: 1;
+    order: 1;
+    background: lightgreen;
+    padding: 25px;
+
+}
+
+aside {
+    flex: 1;
+    order: 3;
+    background-color: lightgreen;
+}
+
+footer {
+    background-color: grey;
+    padding: 25px;
+    border-top: 2px solid black;
+}
+
+@media screen and (max-width:640px) {
+    main {
+        flex-direction: column;
+    }
+    article {
+        order: 1;
+    }
+}
